@@ -12,10 +12,10 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    // public function test_example()
-    // {
-    //     $response = $this->post('/api/checkout');
+    public function test_example()
+    {
+        $response = $this->post('/api/checkout');
 
-    //     $response->assertStatus(200);
-    // }
+        $response->assertStatus(200);
+    }
 }
