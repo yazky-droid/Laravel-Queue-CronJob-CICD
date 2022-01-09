@@ -29,13 +29,13 @@ class ApiTest extends TestCase
         $response->assertStatus(200);
     }
 
-    // public function test_api_transaction_history()
-    // {
-    //     // test failed get data
-    //     $response = $this->get('/api/transaction-history/2');
+    public function test_api_transaction_history()
+    {
+        // test failed get data
+        $response = $this->getJson('/api/transaction-history/2');
 
-    //     $response->assertStatus(200);
-    // }
+        $response->assertStatus(200);
+    }
 
     // public function test_api_()
     // {
