@@ -32,7 +32,7 @@ class ApiTest extends TestCase
     public function test_api_transaction_history()
     {
         // test failed get data
-        $response = $this->getJson('/api/transaction-history/2');
+        $response = $this->getJson('/api/transaction-history/{id}');
 
         $response->assertStatus(200);
     }
